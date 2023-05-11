@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NRG News Page</title>
+</head>
+<body>
+    <nav class="navBar">
+        <div class="logo">
+            <img src="./assets/images/logo.svg" alt="">
+        </div>
+        <div class="navBtn">
+            <button onclick="openNav()">
+                <img src="./assets/images/icon-menu.svg" alt="" class="logo">
+            </button>
+        </div>
+        <div class="navLinkContainer">
+            <a href="/" class="navLink">Home</a>
+            <a href="/" class="navLink">New</a>
+            <a href="/" class="navLink">Popular</a>
+            <a href="/" class="navLink">Trending</a>
+            <a href="/" class="navLink">Categories</a>
+        </div>
+        
+    </nav>
+    <!-- Navigation Menu For MObile Hidden By Defaut -->
+    <div id="hiddenNavBar">
+        <a href="javascript:void(0)" onclick="closeNav()"><img src="./assets/images/icon-menu-close.svg" alt="close menu" class="closeBtn"></a>
+        <div class="navMenuLinkContainer">
+            <a href="/" class="navLink">Home</a>
+            <a href="/" class="navLink">New</a>
+            <a href="/" class="navLink">Popular</a>
+            <a href="/" class="navLink">Trending</a>
+            <a href="/" class="navLink">Categories</a>
+        </div>
+       
+    </div>
+  <div class="container">  
+    <section class="hero">
+            <div class="mainStory">
+                <div class="mainStoryImgContainer">
+                    <img class="mainStoryImgMobile" src="./assets/images/image-web-3-mobile.jpg" alt="">
+                    <img class="mainStoryImgPC" src="./assets/images/image-web-3-desktop.jpg" alt="">
+                </div>
+                <div class="mainStoryContent">
+                    <div>
+                        <h1 class="mainStoryHeader">The Bright Future of Web 3.0?</h1>
+                    </div>
+                    <div>
+                        <p class="lightText">
+                            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                                But is it really fulfilling its promise?
+                            </p>
+                        <button class="readMore">READ MORE</button>
+
+                    </div>
+                    
+                </div>
+
+
+            </div>
+
+            <div class="newStory">
+                <h2>New</h2>
+                <div class="newStoryItem">
+                    <h3 class="smallHeader">Hydrogen VS Electric Cars</h3>
+                    <p class="lightText">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                </div>
+                <div class="newStoryItem">
+                    <h3 class="smallHeader">The Downsides of AI Artistry</h3>
+                    <p class="lightText">What are the possible adverse effects of on-demand AI image generation?</p>
+                </div>
+                <div class="newStoryItem">
+                    <h3 class="smallHeader">Is VC Funding Drying Up?</h3>
+                    <p class="lightText">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="trending">
+            <div class="trendingItem">
+                <div class="trendImage">
+                    <img src="./assets/images/image-retro-pcs.jpg" alt="">
+                </div>
+                <div class="trendText">
+                    <span class="trendNumber">01</span>
+                    <h3 class="smallHeader">Top 10 Laptops of 2022</h3>
+                    <p class="lightText">Our best picks for various needs and budgets.</p>
+                </div>
+            </div>
+            <div class="trendingItem">
+                <div class="trendImage">
+                    <img src="./assets/images/image-top-laptops.jpg" alt="">
+                </div>
+                <div class="trendText">
+                    <span class="trendNumber">02</span>
+                    <h3 class="smallHeader">Reviving Retro PCs</h3>
+                    <p class="lightText">What happens when old PCs are given modern upgrades?</p>
+                </div>
+            </div>
+            <div class="trendingItem">
+                <div class="trendImage">
+                    <img src="./assets/images/image-gaming-growth.jpg" alt="">
+                </div>
+                <div class="trendText">
+                    <span class="trendNumber">03</span>
+                    <h3 class="smallHeader">The Growth of Gaming</h3>
+                    <p class="lightText">How the pandemic has sparked fresh opportunities.</p>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <h1 class="lightText">Built By <a href="https://www.nrg.netlify.app">NRG⚡</a></h1>
+        <p>Designs from <a href="https://www.frontendmentor.io">Frontend Mentor</a></p>
+    </footer>
+  </div>  
+  <script src="main.js"></script>
+</body>
+</html>
